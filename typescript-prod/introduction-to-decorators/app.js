@@ -16,6 +16,6 @@ var Calculator = /** @class */ (function () {
     };
     __decorate([
         log
-    ], Calculator.prototype, "square", null);
+    ], Calculator.prototype, "square");
     return Calculator;
 }());
