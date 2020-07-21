@@ -1,16 +1,34 @@
-import { Controller, Get, Query, Req, Res } from '@nestjs/common';
-import { Request, Response } from 'express';
+import { Controller, Delete, Get, Post, Put } from '@nestjs/common';
 
 @Controller('products')
 export class ProductsController {
+  @Post()
+  create(): string {
+    return 'NEW PRODUCT ENDPOINT';
+  }
+
   @Get()
-  private findAll(
-    @Req() req: Request,
-    @Res() res: Response,
-    @Query() query,
-  ): string {
-    res.json({ msg: 'success' });
-    console.log(req, query);
-    return 'Find All';
+  findAll(): string {
+    return 'FIND ALL';
+  }
+
+  @Get('ab*cd')
+  pattern(): string {
+    return 'PATTERN MATCHED';
+  }
+
+  @Get(':id')
+  findOne(): string {
+    return 'FIND ONE ENDPOINT';
+  }
+
+  @Put()
+  update(): string {
+    return 'UPDATE ALL';
+  }
+
+  @Delete()
+  delete(): string {
+    return 'DELETE ALL';
   }
 }
