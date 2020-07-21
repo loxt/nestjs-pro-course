@@ -1,8 +1,14 @@
-function LoggerAndReturn<T>(thing: T): T {
-  return thing;
+function getArray<T>(items: T[]): T[] {
+  return new Array<T>().concat(items);
 }
+// let myNumArr = getArray<number>([100, 200, 300]);
+// let myStrArr = getArray<string>(['Hello', 'World']);
 
-// const message: string = LoggerAndReturn<string>('Hello World');
-const message: string = LoggerAndReturn('Hello World');
-const message2: number = LoggerAndReturn(2);
-console.log(message, message2);
+
+let myNumArr = getArray([100, 200, 300]);
+let myStrArr = getArray(['Hello', 'World']);
+
+console.log(myNumArr, myStrArr);
+
+// myNumArr.push('doesnt work with different type');
+// myStrArr.push(5);
