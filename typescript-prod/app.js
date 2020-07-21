@@ -1,9 +1,12 @@
-function getInfo(id, name) {
-    console.log(typeof id + ', ' + typeof name);
+var Customer = /** @class */ (function () {
+    function Customer(fname, lname) {
+        this.firstName = fname;
+        this.lastName = lname;
+    }
+    return Customer;
+}());
+function customerLogger(customer) {
+    console.log(customer.firstName + " " + customer.lastName);
 }
-getInfo(1, 'Jane'); //number, string
-// generic with non generic type
-function displayType(id, name) {
-    console.log(typeof id + ', ' + typeof name);
-}
-displayType(2, 'Malik'); // number, string
+var customer = new Customer('Emannuel', 'Loxt');
+customerLogger(customer);

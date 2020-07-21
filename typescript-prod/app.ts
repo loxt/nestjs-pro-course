@@ -1,12 +1,16 @@
-function getInfo<T, U>(id: T, name: U): void {
-  console.log(typeof id + ', ' + typeof name)
+class Customer {
+  firstName: string;
+  lastName: string;
+
+  constructor(fname: string, lname: string) {
+    this.firstName = fname;
+    this.lastName = lname;
+  }
 }
 
-getInfo<number, string>(1, 'Jane'); //number, string
-
-// generic with non generic type
-function displayType<T>(id: T, name: string): void {
-  console.log(typeof id + ', ' + typeof name)
+function customerLogger<T extends Customer>(customer: T): void {
+  console.log(`${customer.firstName} ${customer.lastName}`)
 }
 
-displayType<number>(2, 'Malik') // number, string
+let customer = new Customer('Emannuel', 'Loxt');
+customerLogger(customer);
