@@ -4,6 +4,7 @@ import {
   Get,
   Header,
   HttpCode,
+  Param,
   Post,
   Put,
   Query,
@@ -21,8 +22,8 @@ export class ProductsController {
 
   @Get('docs')
   @Redirect('https://docs.nestjs.com', 302)
-  getDocs(@Query('version') version) {
-    if (version && version === '5') {
+  getDocs(@Query('version') version: number) {
+    if (version && version === 5) {
       return { url: 'https://docs.nestjs.com/v5/' };
     }
   }
@@ -38,8 +39,8 @@ export class ProductsController {
   }
 
   @Get(':id')
-  findOne(): string {
-    return 'FIND ONE ENDPOINT';
+  findOne(@Param() params): string {
+    return params;
   }
 
   @Put()
