@@ -1,8 +1,7 @@
-var Helloworld = /** @class */ (function () {
-    function Helloworld(message) {
-        console.log(message);
-    }
-    return Helloworld;
-}());
-var helloWorld = new Helloworld('Welcome to Typescript!');
-console.log(helloWorld);
+function LoggerAndReturn(thing) {
+    return thing;
+}
+// const message: string = LoggerAndReturn<string>('Hello World');
+var message = LoggerAndReturn('Hello World');
+var message2 = LoggerAndReturn(2);
+console.log(message, message2);
