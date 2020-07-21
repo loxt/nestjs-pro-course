@@ -1,10 +1,30 @@
-import { Controller, Delete, Get, Post, Put } from '@nestjs/common';
+import {
+  Controller,
+  Delete,
+  Get,
+  Header,
+  HttpCode,
+  Post,
+  Put,
+  Query,
+  Redirect,
+} from '@nestjs/common';
 
 @Controller('products')
 export class ProductsController {
   @Post()
+  @HttpCode(204)
+  @Header('Authorization', 'Bearer BLABLABLA')
   create(): string {
     return 'NEW PRODUCT ENDPOINT';
+  }
+
+  @Get('docs')
+  @Redirect('https://docs.nestjs.com', 302)
+  getDocs(@Query('version') version) {
+    if (version && version === '5') {
+      return { url: 'https://docs.nestjs.com/v5/' };
+    }
   }
 
   @Get()
