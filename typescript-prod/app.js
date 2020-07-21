@@ -1,6 +1,9 @@
-function getArray(items) {
-    return new Array().concat(items);
+function getInfo(id, name) {
+    console.log(typeof id + ', ' + typeof name);
 }
-var myNumArr = getArray([100, 200, 300]);
-var myStrArr = getArray(['Hello', 'World']);
-console.log(myNumArr, myStrArr);
+getInfo(1, 'Jane'); //number, string
+// generic with non generic type
+function displayType(id, name) {
+    console.log(typeof id + ', ' + typeof name);
+}
+displayType(2, 'Malik'); // number, string
