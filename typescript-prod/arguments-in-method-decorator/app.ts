@@ -18,6 +18,7 @@ class Calculator2 {
   // Using the decorator @log
 
   @log
+  // @ts-ignore
   square(n: number) {
     return n * n;
   }

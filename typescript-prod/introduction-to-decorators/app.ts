@@ -1,4 +1,4 @@
-function log(target, key, descriptor) {
+function log1(target, key, descriptor) {
   console.log(`${key} was called`)
 }
 
