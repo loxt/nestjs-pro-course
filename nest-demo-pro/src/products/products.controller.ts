@@ -1,18 +1,15 @@
 import { ProductsService } from './products.service';
-import { Controller, Post } from '@nestjs/common';
+import { Body, Controller, Post } from '@nestjs/common';
+import { CreateProductDTO } from './dto/create-product.dto';
+import { Product } from './interfaces/product.interface';
 
 @Controller('products')
 export class ProductsController {
   constructor(private productService: ProductsService) {}
 
   @Post()
-  create() {
-    return this.productService.create({
-      id: '1',
-      name: 'Macbook PRO',
-      qty: 1,
-      price: 100,
-    });
+  async create(@Body() product: CreateProductDTO): Promise<Product[]> {
+    return this.productService.create(product);
   }
 }
 
