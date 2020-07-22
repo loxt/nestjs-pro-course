@@ -37,8 +37,8 @@ export class ProductsController {
   async delete(@Param() params): Promise<Product[]> {
     // throw new HttpException('something went wrong', HttpStatus.BAD_REQUEST);
     // throw new ForbiddenException();
-    throw new NotFoundException();
-    // return this.productService.delete(params.id);
+    // throw new NotFoundException();
+    return this.productService.delete(params.id);
   }
 }
 
