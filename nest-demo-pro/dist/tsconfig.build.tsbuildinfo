@@ -1161,13 +1161,18 @@
         "signature": "ef022c91ea9e75ab4082f2e881f9c4db7b346be2da706e876b253bebce5e6140",
         "affectsGlobalScope": false
       },
+      "../src/products/products.service.ts": {
+        "version": "9c1b91adc6c534811c6e03375cdf97bf2de58ee83bdddbba5a4741f278cbbca9",
+        "signature": "d8aaeaf4b01a251c228a61caea58309d12473104cb42c99351cffe8a01128d96",
+        "affectsGlobalScope": false
+      },
       "../src/products/products.controller.ts": {
-        "version": "439d07a8f695c1610e3885c29796354aefead59dfc5414a5b4d5e9e713e11a66",
-        "signature": "bd583bb728f3e93a75b8ec529b510ced4a56fa24c1f7b1b2470bf14317a99f21",
+        "version": "a741bceaa164d76c7012aa38b1900b967ca12ddc763a98fd5e8b9905bacf1304",
+        "signature": "4fb9c55bd882ed3bdc5e78642b2c00b6b23fa0e2ff4850340e5f32fdb92f2d18",
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "a2e21706f87d8e0936f7dcc7c9564bace5c2cad66bab9e6221c5bd575606d264",
+        "version": "349862fe62288407ff8198f5a4f157fdcd12afd69963bdd26515af6e910c31dd",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -5141,7 +5146,8 @@
         "../node_modules/@types/node/util.d.ts",
         "../src/app.controller.ts",
         "../src/app.service.ts",
-        "../src/products/products.controller.ts"
+        "../src/products/products.controller.ts",
+        "../src/products/products.service.ts"
       ],
       "../src/app.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -5161,6 +5167,15 @@
         "../src/app.module.ts"
       ],
       "../src/products/products.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/products/products.service.ts"
+      ],
+      "../src/products/products.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -8429,6 +8444,9 @@
       ],
       "../src/app.controller.ts": [
         "../src/app.service.ts"
+      ],
+      "../src/products/products.controller.ts": [
+        "../src/products/products.service.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -8801,7 +8819,8 @@
       "../src/app.module.ts",
       "../src/app.service.ts",
       "../src/main.ts",
-      "../src/products/products.controller.ts"
+      "../src/products/products.controller.ts",
+      "../src/products/products.service.ts"
     ]
   },
   "version": "3.9.7"
