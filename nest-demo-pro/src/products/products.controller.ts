@@ -46,8 +46,11 @@ export class ProductsController {
     return await this.productService.update(+id, recordToUpdate);
   }
 
-  @Delete(':id')
-  async delete(@Param('id') id: number): Promise<DeleteResult> {
-    return await this.productService.delete(+id);
+  @Delete(':productId/:detailsId')
+  async delete(@Param() params): Promise<DeleteResult> {
+    return await this.productService.delete(
+      +params.productId,
+      +params.detailsId,
+    );
   }
 }

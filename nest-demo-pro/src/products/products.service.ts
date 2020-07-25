@@ -49,8 +49,14 @@ export class ProductsService {
     return results;
   }
 
-  async delete(id: number): Promise<DeleteResult> {
-    return await this.productRepository.delete(id);
+  async delete(productId: number, productDetailsId: number): Promise<any> {
+    await Promise.all([
+      await this.productRepository.delete(productId),
+      await this.productDetailsRepository.delete(productDetailsId),
+    ]);
+    return {
+      msg: `product is deleted with id ${productId} and product details with id ${productDetailsId}`,
+    };
   }
 
   async update(id: number, recordToUpdate: UpdateProduct): Promise<Product> {
