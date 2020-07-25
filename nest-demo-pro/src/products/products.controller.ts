@@ -11,11 +11,11 @@ import {
 } from '@nestjs/common';
 import { ProductsService } from './products.service';
 import { CreateProductDTO } from './dto/create-product.dto';
-import { Product } from './interfaces/product.interface';
 import { HttpExceptionFilter } from '../common/filters/http-exception.filter';
 import { TransformInterceptor } from '../common/interceptors/transform.interceptor';
 import { DeleteResult } from 'typeorm/index';
 import { UpdateProductDTO } from './dto/update-product.dto';
+import { Product } from './interfaces/product.interface';
 
 @Controller('products')
 @UseFilters(HttpExceptionFilter)
