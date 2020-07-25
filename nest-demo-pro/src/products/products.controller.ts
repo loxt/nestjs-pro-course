@@ -14,7 +14,7 @@ import { CreateProductDTO } from './dto/create-product.dto';
 import { Product } from './interfaces/product.interface';
 import { HttpExceptionFilter } from '../common/filters/http-exception.filter';
 import { TransformInterceptor } from '../common/interceptors/transform.interceptor';
-import { DeleteResult, UpdateResult } from 'typeorm/index';
+import { DeleteResult } from 'typeorm/index';
 import { UpdateProductDTO } from './dto/update-product.dto';
 
 @Controller('products')
@@ -42,7 +42,7 @@ export class ProductsController {
   async update(
     @Param('id') id: number,
     @Body() recordToUpdate: UpdateProductDTO,
-  ): Promise<UpdateResult> {
+  ): Promise<Product> {
     return await this.productService.update(+id, recordToUpdate);
   }
 
