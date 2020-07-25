@@ -3,6 +3,15 @@ export interface Product {
   name: string;
   qty: number;
   price: number;
+  productDetails: ProductDetails;
+}
+
+export interface ProductDetails {
+  dimension?: string;
+  partNumber: string;
+  weight?: number;
+  manufacturer?: string;
+  origin?: string;
 }
 
 export interface UpdateProduct {

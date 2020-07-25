@@ -5,15 +5,32 @@ import { Repository } from 'typeorm';
 import { ProductEntity } from './entities/product.entity';
 import { CreateProductDTO } from './dto/create-product.dto';
 import { DeleteResult } from 'typeorm/index';
+import { ProductDetailsEntity } from './entities/product-details.entity';
 
 @Injectable()
 export class ProductsService {
   constructor(
     @InjectRepository(ProductEntity)
     private readonly productRepository: Repository<ProductEntity>,
+    @InjectRepository(ProductDetailsEntity)
+    private readonly productDetailsRepository: Repository<ProductDetailsEntity>,
   ) {}
   async create(product: CreateProductDTO): Promise<Product> {
-    return await this.productRepository.save(product);
+    const productDetails = await this.productDetailsRepository.save({
+      dimension: product.dimension,
+      partNumber: product.partNumber,
+      weight: product.weight,
+      manufacturer: product.manufacturer,
+      origin: product.origin,
+    });
+
+    const newProduct = new ProductEntity();
+    newProduct.name = product.name;
+    newProduct.price = product.price;
+    newProduct.qty = product.qty;
+    newProduct.productDetails = productDetails;
+    await this.productRepository.save(newProduct);
+    return { ...newProduct, productDetails };
   }
 
   async findAll(): Promise<Product[]> {
