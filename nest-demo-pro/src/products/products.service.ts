@@ -4,7 +4,6 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { ProductEntity } from './entities/product.entity';
 import { CreateProductDTO } from './dto/create-product.dto';
-import { DeleteResult } from 'typeorm/index';
 import { ProductDetailsEntity } from './entities/product-details.entity';
 
 @Injectable()
@@ -15,6 +14,7 @@ export class ProductsService {
     @InjectRepository(ProductDetailsEntity)
     private readonly productDetailsRepository: Repository<ProductDetailsEntity>,
   ) {}
+
   async create(product: CreateProductDTO): Promise<Product> {
     const productDetails = await this.productDetailsRepository.save({
       dimension: product.dimension,
@@ -60,12 +60,38 @@ export class ProductsService {
   }
 
   async update(id: number, recordToUpdate: UpdateProduct): Promise<Product> {
-    const product = await this.productRepository.findOne(id);
+    const product = await this.productRepository.findOne(id, {
+      relations: ['productDetails'],
+    });
     if (!product) {
       throw new NotFoundException('Could not find any product');
     }
     // merge the product with recordToUpdate
-    await this.productRepository.merge(product, recordToUpdate);
-    return await this.productRepository.save(product);
+    const { qty, price, name } = recordToUpdate;
+    this.productRepository.merge(product, { qty, name, price });
+    const updatedProduct = await this.productRepository.save(product);
+
+    const foundDetails = await this.productDetailsRepository.findOne(
+      product.productDetails.id,
+    );
+
+    const {
+      dimension,
+      weight,
+      origin,
+      manufacturer,
+      partNumber,
+    } = recordToUpdate;
+    this.productDetailsRepository.merge(foundDetails, {
+      dimension,
+      weight,
+      origin,
+      manufacturer,
+      partNumber,
+    });
+    const updatedDetails = await this.productDetailsRepository.save(
+      foundDetails,
+    );
+    return { ...updatedProduct, productDetails: updatedDetails };
   }
 }

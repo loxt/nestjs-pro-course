@@ -25,18 +25,17 @@ export class CreateProductDTO {
 
   @IsOptional()
   @IsString()
-  dimension: string;
+  readonly dimension: string;
 
   @IsOptional()
   @IsInt()
-  weight: number;
+  readonly weight: number;
 
   @IsOptional()
   @IsString()
-  manufacturer: string;
+  readonly manufacturer: string;
 
   @IsOptional()
   @IsString()
-  origin: string;
-  '';
+  readonly origin: string;
 }

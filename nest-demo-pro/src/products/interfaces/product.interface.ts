@@ -7,6 +7,7 @@ export interface Product {
 }
 
 export interface ProductDetails {
+  id?: number;
   dimension?: string;
   partNumber: string;
   weight?: number;
@@ -15,7 +16,12 @@ export interface ProductDetails {
 }
 
 export interface UpdateProduct {
-  name: string;
-  qty: number;
-  price: number;
+  name?: string;
+  qty?: number;
+  price?: number;
+  dimension?: string;
+  partNumber?: string;
+  weight?: number;
+  manufacturer?: string;
+  origin?: string;
 }
