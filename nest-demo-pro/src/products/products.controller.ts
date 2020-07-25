@@ -6,6 +6,7 @@ import {
   UseInterceptors,
   Get,
   Param,
+  NotFoundException,
 } from '@nestjs/common';
 import { ProductsService } from './products.service';
 import { CreateProductDTO } from './dto/create-product.dto';
@@ -28,10 +29,14 @@ export class ProductsController {
   async find(): Promise<Product[]> {
     return this.productService.findAll();
   }
-  // @Get(':id')
-  // async findOne(@Param() params): Promise<Product> {
-  //   return this.productService.findOne(params.id);
-  // }
+  @Get(':id')
+  async findOne(@Param('id') id: number): Promise<Product> {
+    const results = await this.productService.findOne(id);
+    if (!results) {
+      throw new NotFoundException('Could not find product');
+    }
+    return results;
+  }
   // @Delete(':id')
   // async delete(@Param() params): Promise<Product[]> {
   //   // return this.productService.delete(params.id);

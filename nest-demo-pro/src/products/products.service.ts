@@ -17,9 +17,9 @@ export class ProductsService {
   async findAll(): Promise<Product[]> {
     return await this.productRepository.find();
   }
-  // findOne(id: string): Product {
-  //   return this.products.find(p => p.id === id);
-  // }
+  async findOne(id: number): Promise<Product> {
+    return this.productRepository.findOne(id);
+  }
   // delete(id: string): Product[] {
   //   const index = this.products.findIndex(p => p.id === id);
   //   this.products.splice(index, 1);
