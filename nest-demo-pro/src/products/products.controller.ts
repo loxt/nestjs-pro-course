@@ -4,6 +4,8 @@ import {
   Body,
   UseFilters,
   UseInterceptors,
+  Get,
+  Param,
 } from '@nestjs/common';
 import { ProductsService } from './products.service';
 import { CreateProductDTO } from './dto/create-product.dto';
@@ -22,10 +24,10 @@ export class ProductsController {
     return await this.productService.create(product);
   }
 
-  // @Get()
-  // async find(@Param() params): Promise<Product[]> {
-  //   return this.productService.findAll();
-  // }
+  @Get()
+  async find(): Promise<Product[]> {
+    return this.productService.findAll();
+  }
   // @Get(':id')
   // async findOne(@Param() params): Promise<Product> {
   //   return this.productService.findOne(params.id);

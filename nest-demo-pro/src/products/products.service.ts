@@ -14,9 +14,9 @@ export class ProductsService {
   async create(product: CreateProductDTO): Promise<Product> {
     return await this.productRepository.save(product);
   }
-  // findAll(): Product[] {
-  //   return this.products;
-  // }
+  async findAll(): Promise<Product[]> {
+    return await this.productRepository.find();
+  }
   // findOne(id: string): Product {
   //   return this.products.find(p => p.id === id);
   // }
