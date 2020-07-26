@@ -2,7 +2,6 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { UserEntity } from './users.entity';
 import { Repository } from 'typeorm/index';
-import { PhotosEntity } from '../photos/photos.entity';
 import { User } from './interfaces/users.interface';
 import { CreateUsersDTO } from './dto/create-users.dto';
 
@@ -10,9 +9,7 @@ import { CreateUsersDTO } from './dto/create-users.dto';
 export class UsersService {
   constructor(
     @InjectRepository(UserEntity)
-    private readonly usersRepository: Repository<UserEntity>,
-    @InjectRepository(PhotosEntity)
-    private readonly photosRepository: Repository<PhotosEntity>,
+    private readonly usersRepository: Repository<UserEntity>, // @InjectRepository(PhotosEntity) // private readonly photosRepository: Repository<PhotosEntity>,
   ) {}
 
   async create(user: CreateUsersDTO): Promise<User> {
@@ -31,5 +28,9 @@ export class UsersService {
     // await this.usersRepository.save(savedUser);
     //
     // return { ...savedUser, photos: savedPhotos };
+  }
+
+  async findAll(): Promise<User[]> {
+    return await this.usersRepository.find({ relations: ['photos'] });
   }
 }
