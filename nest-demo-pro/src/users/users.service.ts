@@ -1,9 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { UserEntity } from './users.entity';
-import { DeleteResult, Repository } from 'typeorm/index';
+import { DeleteResult, Repository, UpdateResult } from 'typeorm/index';
 import { User } from './interfaces/users.interface';
 import { CreateUsersDTO } from './dto/create-users.dto';
+import { UpdateUserDTO } from './dto/update-users.dto';
 
 @Injectable()
 export class UsersService {
@@ -40,5 +41,9 @@ export class UsersService {
 
   async delete(id: number): Promise<DeleteResult> {
     return await this.usersRepository.delete(id);
+  }
+
+  async update(id: number, user: UpdateUserDTO): Promise<UpdateResult> {
+    return await this.usersRepository.update(id, user);
   }
 }
