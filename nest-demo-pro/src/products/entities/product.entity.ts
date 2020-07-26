@@ -1,5 +1,10 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
-import { JoinColumn, OneToOne } from 'typeorm/index';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  JoinColumn,
+  OneToOne,
+} from 'typeorm';
 import { ProductDetailsEntity } from './product-details.entity';
 
 @Entity({ name: 'products' })
