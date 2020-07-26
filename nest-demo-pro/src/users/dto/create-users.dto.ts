@@ -1,4 +1,5 @@
-import { IsEmail, IsNotEmpty, IsString } from 'class-validator';
+import { IsArray, IsEmail, IsNotEmpty, IsString } from 'class-validator';
+import { PhotosEntity } from '../../photos/photos.entity';
 
 export class CreateUsersDTO {
   @IsNotEmpty()
@@ -9,4 +10,7 @@ export class CreateUsersDTO {
   @IsNotEmpty()
   @IsString()
   password: string;
+
+  @IsArray()
+  photos: PhotosEntity[];
 }
