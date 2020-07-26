@@ -1,14 +1,4 @@
-import { IsArray, IsEmail, IsInt, IsOptional, IsString } from 'class-validator';
-
-export class UpdatePhotoDTO {
-  @IsOptional()
-  @IsInt()
-  id: number;
-
-  @IsOptional()
-  @IsString()
-  readonly url: string;
-}
+import { IsEmail, IsOptional, IsString } from 'class-validator';
 
 export class UpdateUserDTO {
   @IsOptional()
@@ -19,8 +9,4 @@ export class UpdateUserDTO {
   @IsOptional()
   @IsString()
   password: string;
-
-  @IsOptional()
-  @IsArray()
-  photos: UpdatePhotoDTO[];
 }
