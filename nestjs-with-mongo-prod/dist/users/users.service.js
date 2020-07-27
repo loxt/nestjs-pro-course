@@ -15,19 +15,31 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const mongoose_1 = require("@nestjs/mongoose");
 const mongoose_2 = require("mongoose");
+const password_hasher_service_1 = require("./auth/password-hasher/password-hasher.service");
 let UsersService = class UsersService {
-    constructor(userModel) {
+    constructor(userModel, hasherService) {
         this.userModel = userModel;
+        this.hasherService = hasherService;
     }
     async signup(doc) {
-        const newUser = new this.userModel(doc);
-        return await newUser.save();
+        const user = await this.userModel.findOne({ email: doc.email });
+        if (user) {
+            throw new common_1.UnauthorizedException(`User already created with this ${doc.email}`);
+        }
+        const encryptedPassword = await this.hasherService.hashPassword(doc.password);
+        const newUser = new this.userModel({
+            email: doc.email,
+            password: encryptedPassword,
+        });
+        await newUser.save();
+        return { email: newUser.email };
     }
 };
 UsersService = __decorate([
     common_1.Injectable(),
     __param(0, mongoose_1.InjectModel('Users')),
-    __metadata("design:paramtypes", [mongoose_2.Model])
+    __metadata("design:paramtypes", [mongoose_2.Model,
+        password_hasher_service_1.PasswordHasherService])
 ], UsersService);
 exports.UsersService = UsersService;
 //# sourceMappingURL=users.service.js.map
