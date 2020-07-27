@@ -5,6 +5,8 @@ import { Repository } from 'typeorm/index';
 import { CategoryEntity } from './category.entity';
 import { CreateCategoryDTO } from './dto/create-category.dto';
 import { Category } from './interfaces/category.interface';
+import { CreateQuestionDTO } from './dto/create-question.dto';
+import { Question } from './interfaces/question.interface';
 
 @Injectable()
 export class QuizService {
@@ -17,5 +19,9 @@ export class QuizService {
 
   async createCategories(category: CreateCategoryDTO): Promise<Category[]> {
     return await this.categoryRepository.save(category.categories);
+  }
+
+  async createQuestion(question: CreateQuestionDTO): Promise<Question> {
+    return await this.questionsRepository.save(question);
   }
 }
