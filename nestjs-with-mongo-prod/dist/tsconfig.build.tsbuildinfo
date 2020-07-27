@@ -1101,9 +1101,21 @@
         "version": "260f889b9e2b69f77be1155348eb345166aec664b3efff6720053c6844a41f28",
         "signature": "ef022c91ea9e75ab4082f2e881f9c4db7b346be2da706e876b253bebce5e6140"
       },
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/bson/index.d.ts": {
+        "version": "3994ebfd11faa4018d8e1b879190046588f41f5cd60438e642ca39a705c726be",
+        "signature": "3994ebfd11faa4018d8e1b879190046588f41f5cd60438e642ca39a705c726be"
+      },
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongodb/index.d.ts": {
+        "version": "f85c02e9a1c2d6b22824f79580ecf02677c008e124c4ae4cd3b03886f2d8714c",
+        "signature": "f85c02e9a1c2d6b22824f79580ecf02677c008e124c4ae4cd3b03886f2d8714c"
+      },
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts": {
+        "version": "aa2a99b2b063d86eb4905d12fa71717853c14f04356ab8a929a696ae836ed4b4",
+        "signature": "aa2a99b2b063d86eb4905d12fa71717853c14f04356ab8a929a696ae836ed4b4"
+      },
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/interfaces/user.ts": {
-        "version": "758664fb6ba6c02bd30da7906f9d133737650b9eed39ccdc9c42030cdd0911bc",
-        "signature": "9baed71746a93842c3ace9b4afff77018c89372fd54a8f25e5d02bbde13a5a1d"
+        "version": "106ee2525a02e6834dd4ceeb962e8e06c7f3f448691c76cf14ba0031f51c0641",
+        "signature": "aad368075d5bc839c85eb19ef2d8560219df0b0995ea7867bb39b7021f1378bf"
       },
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/class-validator/validation/ValidationError.d.ts": {
         "version": "8b5ad058f8dab857050fdbb092b9f1267d22641f0f746cd8a7abee85b48bb83a",
@@ -1181,18 +1193,6 @@
         "version": "ec8cdf5fcccf080f8b416094ec09f57846cfba38417513ab75a6d2ac7b2642b1",
         "signature": "ddfe1e2b8e53749e49f42e07501a2015494add6dfd04135f37bb5d67282be2a2"
       },
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts": {
-        "version": "2b1425ca5c44b196ec269caa0229663cfbf597d4d7fa3b634b2f663039645136",
-        "signature": "a9654d873a195a191d67fa6ee9b8f6a5230f745f7626cf957b7cc78a745558df"
-      },
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.controller.ts": {
-        "version": "aa9d0d506db795dfe640b1f2b955e1b8e4213086bdc882a1f36100e09bde1ba9",
-        "signature": "c37dec11d6032da3148d02d8a20bc8c0fc5895f647e6bdf4e64d4f74d0c6a181"
-      },
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.module.ts": {
-        "version": "fc63f9f4f0ec5ff87795e809acc4a443c36359e40b793a60628cb47da7e7b5e2",
-        "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69"
-      },
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": {
         "version": "d6f8f5677b0e4076ff30fb38cefe5739f3247f4a311081a83aac4a7996b2224b",
         "signature": "d6f8f5677b0e4076ff30fb38cefe5739f3247f4a311081a83aac4a7996b2224b"
@@ -1213,18 +1213,6 @@
         "version": "5e3848c0da812f18dc386e371c0c336331798013c2879a7529a0137fa757421c",
         "signature": "5e3848c0da812f18dc386e371c0c336331798013c2879a7529a0137fa757421c"
       },
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/bson/index.d.ts": {
-        "version": "3994ebfd11faa4018d8e1b879190046588f41f5cd60438e642ca39a705c726be",
-        "signature": "3994ebfd11faa4018d8e1b879190046588f41f5cd60438e642ca39a705c726be"
-      },
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongodb/index.d.ts": {
-        "version": "f85c02e9a1c2d6b22824f79580ecf02677c008e124c4ae4cd3b03886f2d8714c",
-        "signature": "f85c02e9a1c2d6b22824f79580ecf02677c008e124c4ae4cd3b03886f2d8714c"
-      },
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts": {
-        "version": "aa2a99b2b063d86eb4905d12fa71717853c14f04356ab8a929a696ae836ed4b4",
-        "signature": "aa2a99b2b063d86eb4905d12fa71717853c14f04356ab8a929a696ae836ed4b4"
-      },
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": {
         "version": "3121c8302d6724dd7a7ba38823d3591ef0ece93180a914c3d8f9f4bb2c998b23",
         "signature": "3121c8302d6724dd7a7ba38823d3591ef0ece93180a914c3d8f9f4bb2c998b23"
@@ -1244,6 +1232,22 @@
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/index.d.ts": {
         "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
+      },
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts": {
+        "version": "5f8adedf50e04801e0b0d941d1d2e0d2e27c5d0db330d11fa3517b0f8cce1d96",
+        "signature": "a3f0a8edd8d37dafbe8c72fb8c0d97b9f116e149ff1f48709a46843d9f67405b"
+      },
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.controller.ts": {
+        "version": "aa9d0d506db795dfe640b1f2b955e1b8e4213086bdc882a1f36100e09bde1ba9",
+        "signature": "c37dec11d6032da3148d02d8a20bc8c0fc5895f647e6bdf4e64d4f74d0c6a181"
+      },
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/schemas/users.schema.ts": {
+        "version": "73deca8112f169a20b1c100531235c2569f97ea6534b3b740c230dc84412a9ef",
+        "signature": "1c21071f2c0d7d9779303a6a204301fb1576821e54fc756baf24e3e726ba2897"
+      },
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.module.ts": {
+        "version": "c5fc86121f88166f5fd3504a021b9f25731b5cb606df0ec76fd87b31ee61c38c",
+        "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69"
       },
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/app.module.ts": {
         "version": "8d361af93385f349530ff3bd88f6d942989c7508040d9f54995ba0840a9cdb42",
@@ -3157,7 +3161,31 @@
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/bson/index.d.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongodb/index.d.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/bson/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/events.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/stream.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/tls.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/events.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongodb/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/stream.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/interfaces/user.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3271,28 +3299,6 @@
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts": [
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/common/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/interfaces/user.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/dto/create-user.dto.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.controller.ts": [
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/common/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/interfaces/user.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/dto/create-user.dto.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.module.ts": [
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/common/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.controller.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
@@ -3315,29 +3321,6 @@
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/interfaces/async-model-factory.interface.d.ts": [
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/common/interfaces/index.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/interfaces/model-definition.interface.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/bson/index.d.ts": [
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongodb/index.d.ts": [
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/bson/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/events.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/stream.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/tls.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts": [
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/events.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongodb/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/stream.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/index.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3371,6 +3354,37 @@
       ],
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/index.d.ts": [
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/common/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/interfaces/user.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/dto/create-user.dto.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.controller.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/common/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/interfaces/user.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/dto/create-user.dto.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/schemas/users.schema.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.module.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/common/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.controller.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/schemas/users.schema.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5409,6 +5423,32 @@
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/app.controller.ts": [
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/app.service.ts"
       ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/bson/index.d.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongodb/index.d.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/bson/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/events.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/stream.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/tls.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/events.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongodb/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/stream.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/interfaces/user.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts"
+      ],
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/class-validator/validation/ValidationError.d.ts": [
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
@@ -5514,15 +5554,6 @@
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts": [
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/dto/create-user.dto.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/interfaces/user.ts"
-      ],
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.controller.ts": [
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/dto/create-user.dto.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/interfaces/user.ts"
-      ],
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
@@ -5545,29 +5576,6 @@
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/interfaces/async-model-factory.interface.d.ts": [
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/common/interfaces/index.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/interfaces/model-definition.interface.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/bson/index.d.ts": [
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongodb/index.d.ts": [
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/bson/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/events.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/stream.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/tls.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts": [
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/events.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongodb/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/stream.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts",
-        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/index.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5603,6 +5611,19 @@
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/index.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/util.d.ts",
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/interfaces/user.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/dto/create-user.dto.ts"
+      ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.controller.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/dto/create-user.dto.ts",
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/interfaces/user.ts"
+      ],
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/schemas/users.schema.ts": [
+        "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts"
       ],
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
         "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/common/index.d.ts",
@@ -6276,6 +6297,9 @@
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/common/index.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/app.service.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/app.controller.ts",
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/bson/index.d.ts",
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongodb/index.d.ts",
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/interfaces/user.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/class-validator/validation/ValidationError.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/class-validator/validation/ValidatorOptions.d.ts",
@@ -6296,22 +6320,20 @@
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/class-validator/metadata/MetadataStorage.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/class-validator/index.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/dto/create-user.dto.ts",
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts",
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.controller.ts",
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.module.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/common/index.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/interfaces/model-definition.interface.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/interfaces/async-model-factory.interface.d.ts",
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/bson/index.d.ts",
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongodb/index.d.ts",
-      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@types/mongoose/index.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/dist/index.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/mongoose/index.d.ts",
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.service.ts",
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.controller.ts",
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/schemas/users.schema.ts",
+      "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/users/users.module.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/src/app.module.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/core/adapters/http-adapter.d.ts",
       "/home/loxt/workspace/nest-pro-course/nestjs-with-mongo-prod/node_modules/@nestjs/core/adapters/index.d.ts",
