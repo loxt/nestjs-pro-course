@@ -10,7 +10,7 @@ import { SignupRsp, LoginRsp } from './interfaces/user';
 import { UsersService } from './users.service';
 import { CreateUserDTO } from './dto/create-user.dto';
 import { AuthGuard } from '@nestjs/passport';
-import { RolesGuard } from '../common/guards/roles-guard.guard';
+import { RolesGuard } from '../common/guards/roles.guard';
 
 @Controller('users')
 export class UsersController {
