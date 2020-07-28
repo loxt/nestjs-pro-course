@@ -55,13 +55,23 @@ export class UsersService {
     );
     if (matchedPassword) {
       // generate JWT
-      const token = await this.jwtService.signAsync({
-        id: user.id,
-        email: user.email,
-      });
+      const token = await this.jwtService.signAsync(
+        {
+          id: user._id,
+          email: user.email,
+        },
+        {
+          expiresIn: '60s',
+        }
+      );
       return { token };
     } else {
       throw new UnauthorizedException('Invalid password');
     }
+  }
+
+  async validateUserById(userId: string): Promise<boolean> {
+    const user = await this.userModel.findById(userId);
+    return !!user;
   }
 }
