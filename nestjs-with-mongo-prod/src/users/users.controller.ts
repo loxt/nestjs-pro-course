@@ -10,6 +10,7 @@ import { SignupRsp, LoginRsp } from './interfaces/user';
 import { UsersService } from './users.service';
 import { CreateUserDTO } from './dto/create-user.dto';
 import { AuthGuard } from '@nestjs/passport';
+import { RolesGuard } from '../common/guards/roles-guard.guard';
 
 @Controller('users')
 export class UsersController {
@@ -23,8 +24,8 @@ export class UsersController {
     return await this.userService.login(user);
   }
 
-  @UseGuards(AuthGuard('jwt'))
   @Get('profile')
+  @UseGuards(AuthGuard('jwt'), RolesGuard)
   async profile(@Request() req) {
     return req.user;
   }

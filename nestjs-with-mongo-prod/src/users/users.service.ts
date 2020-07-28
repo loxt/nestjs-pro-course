@@ -61,7 +61,7 @@ export class UsersService {
           email: user.email,
         },
         {
-          expiresIn: '60s',
+          expiresIn: '7d',
         }
       );
       return { token };
