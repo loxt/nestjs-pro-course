@@ -12,11 +12,16 @@ const users_service_1 = require("./users.service");
 const mongoose_1 = require("@nestjs/mongoose");
 const users_schema_1 = require("./schemas/users.schema");
 const password_hasher_service_1 = require("./auth/password-hasher/password-hasher.service");
+const jwt_1 = require("@nestjs/jwt");
+const jwt_constants_1 = require("../constants/jwt.constants");
 let UsersModule = class UsersModule {
 };
 UsersModule = __decorate([
     common_1.Module({
-        imports: [mongoose_1.MongooseModule.forFeature([{ name: 'Users', schema: users_schema_1.UserSchema }])],
+        imports: [
+            jwt_1.JwtModule.register({ secret: jwt_constants_1.jwtContants.secret }),
+            mongoose_1.MongooseModule.forFeature([{ name: 'Users', schema: users_schema_1.UserSchema }]),
+        ],
         controllers: [users_controller_1.UsersController],
         providers: [users_service_1.UsersService, password_hasher_service_1.PasswordHasherService],
     })

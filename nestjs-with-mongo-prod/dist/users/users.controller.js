@@ -22,6 +22,9 @@ let UsersController = class UsersController {
     async signUp(user) {
         return await this.userService.signup(user);
     }
+    async login(user) {
+        return await this.userService.login(user);
+    }
 };
 __decorate([
     common_1.Post('signup'),
@@ -30,6 +33,13 @@ __decorate([
     __metadata("design:paramtypes", [create_user_dto_1.CreateUserDTO]),
     __metadata("design:returntype", Promise)
 ], UsersController.prototype, "signUp", null);
+__decorate([
+    common_1.Post('login'),
+    __param(0, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [create_user_dto_1.CreateUserDTO]),
+    __metadata("design:returntype", Promise)
+], UsersController.prototype, "login", null);
 UsersController = __decorate([
     common_1.Controller('users'),
     __metadata("design:paramtypes", [users_service_1.UsersService])
