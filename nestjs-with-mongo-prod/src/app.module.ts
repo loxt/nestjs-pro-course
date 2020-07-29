@@ -6,10 +6,13 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/auth-nest-db', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }),
+    MongooseModule.forRoot(
+      'mongodb+srv://admin:root123456@auth-nest-db.yxx4x.mongodb.net/auth-nest-db?retryWrites=true&w=majority',
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }
+    ),
     UsersModule,
   ],
   controllers: [AppController],
