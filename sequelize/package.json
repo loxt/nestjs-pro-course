@@ -10,11 +10,11 @@
     "start:prod": "node dist/main.js"
   },
   "dependencies": {
-    "class-transformer": "^0.2.3",
-    "class-validator": "^0.10.1",
     "@nestjs/common": "6.6.7",
     "@nestjs/core": "6.6.7",
     "@nestjs/platform-express": "6.6.7",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.10.1",
     "mysql2": "1.7.0",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3",
@@ -27,7 +27,10 @@
   "devDependencies": {
     "@types/node": "10.14.17",
     "@types/sequelize": "4.28.4",
+    "prettier": "^2.0.5",
     "ts-node": "8.3.0",
-    "tslint": "5.19.0"
+    "tslint": "5.19.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.3.0"
   }
 }

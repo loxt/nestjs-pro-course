@@ -10,8 +10,8 @@ export const databaseProviders = [
         host: 'localhost',
         port: 5432,
         username: 'postgres',
-        password: 'root',
-        database: 'test',
+        password: 'docker',
+        database: 'nest_db',
       });
       sequelize.addModels([Cat]);
       await sequelize.sync();
