@@ -13,6 +13,7 @@ async function bootstrap() {
     .setDescription('JWT Authentication demo with MongoDB')
     .setVersion('1.0.0')
     .addTag('Users')
+    .addBearerAuth()
     .build();
 
   const document = SwaggerModule.createDocument(app, options);
