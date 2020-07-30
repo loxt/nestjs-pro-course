@@ -17,6 +17,9 @@ export class AuthorResolver {
     @Context() ctx,
     @Info() info,
   ): Promise<Author> {
-    return Promise.resolve(this.authors.find(author => author.id === id));
+    const _author = this.authors.find(author => author.id === id);
+    return _author
+      ? Promise.resolve(_author)
+      : Promise.reject('Could not find any author');
   }
 }
