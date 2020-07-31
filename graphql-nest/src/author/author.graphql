@@ -11,6 +11,7 @@ type Author {
 
 type Mutation {
   createAuthor(author: AuthorInput!): Author
+  deleteAuthor(id: ID!): String
 }
 
 input AuthorInput {

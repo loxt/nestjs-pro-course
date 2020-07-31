@@ -20,6 +20,14 @@ export class AuthorResolver {
     return await this.authorService.create(author);
   }
 
+  @Mutation()
+  async deleteAuthor(
+    @Root() root: ParameterDecorator,
+    @Args('id') id: string,
+  ): Promise<string> {
+    return await this.authorService.delete(id);
+  }
+
   @Query()
   async author(@Args('id') id: string): Promise<Author> {
     return await this.authorService.findOne(id);

@@ -21,4 +21,10 @@ export class AuthorService {
   async findOne(id: string): Promise<Author> {
     return this.authorModel.findById(id);
   }
+
+  async delete(id: string): Promise<string> {
+    const results = await this.authorModel.findByIdAndDelete(id);
+    console.log(results);
+    return `Author is deleted with id ${id}`;
+  }
 }
