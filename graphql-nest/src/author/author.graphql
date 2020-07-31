@@ -10,11 +10,17 @@ type Author {
 }
 
 type Mutation {
-  createAuthor(author: AuthorInput!): Author
+  createAuthor(author: CreateAuthorInput!): Author
   deleteAuthor(id: ID!): String
+  updateAuthor(id: ID!, author: UpdateAuthorInput!): Author
 }
 
-input AuthorInput {
+input CreateAuthorInput {
+  firstName: String
+  lastName: String
+}
+
+input UpdateAuthorInput {
   firstName: String!
   lastName: String!
 }

@@ -27,4 +27,8 @@ export class AuthorService {
     console.log(results);
     return `Author is deleted with id ${id}`;
   }
+
+  async update(id: string, author: Author): Promise<Author> {
+    return this.authorModel.findByIdAndUpdate(id, author);
+  }
 }

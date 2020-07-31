@@ -28,6 +28,14 @@ export class AuthorResolver {
     return await this.authorService.delete(id);
   }
 
+  @Mutation()
+  async updateAuthor(
+    @Root() root: ParameterDecorator,
+    @Args() args,
+  ): Promise<Author> {
+    return await this.authorService.update(args.id, args.author);
+  }
+
   @Query()
   async author(@Args('id') id: string): Promise<Author> {
     return await this.authorService.findOne(id);
