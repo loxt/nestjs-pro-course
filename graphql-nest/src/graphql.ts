@@ -25,6 +25,19 @@ export interface Author {
     id: string;
     firstName?: string;
     lastName?: string;
+    posts?: Post[];
+    address?: Address;
+}
+
+export interface Post {
+    id: string;
+    title?: string;
+}
+
+export interface Address {
+    zipCode?: string;
+    phone?: string;
+    city?: string;
 }
 
 export interface IMutation {
