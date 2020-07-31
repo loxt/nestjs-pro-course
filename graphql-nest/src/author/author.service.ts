@@ -29,6 +29,8 @@ export class AuthorService {
   }
 
   async update(id: string, author: Author): Promise<Author> {
-    return this.authorModel.findByIdAndUpdate(id, author);
+    return this.authorModel.findByIdAndUpdate(id, author, {
+      new: true,
+    });
   }
 }
