@@ -1,7 +1,8 @@
-import { Args, Mutation, Query, Resolver, Root } from '@nestjs/graphql';
+import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { AuthorService } from './author.service';
 import { Author } from './author.interface';
 import { CreateAuthorDTO } from './dto/create-author.dto';
+import { UpdateAuthorInput } from '../graphql';
 
 @Resolver('Author')
 export class AuthorResolver {
@@ -13,27 +14,21 @@ export class AuthorResolver {
   }
 
   @Mutation()
-  async createAuthor(
-    @Root() root: ParameterDecorator,
-    @Args('author') author: CreateAuthorDTO,
-  ): Promise<Author> {
+  async createAuthor(@Args('author') author: CreateAuthorDTO): Promise<Author> {
     return await this.authorService.create(author);
   }
 
   @Mutation()
-  async deleteAuthor(
-    @Root() root: ParameterDecorator,
-    @Args('id') id: string,
-  ): Promise<string> {
+  async deleteAuthor(@Args('id') id: string): Promise<string> {
     return await this.authorService.delete(id);
   }
 
   @Mutation()
   async updateAuthor(
-    @Root() root: ParameterDecorator,
-    @Args() args,
+    @Args('id') id: string,
+    @Args('author') author: UpdateAuthorInput,
   ): Promise<Author> {
-    return await this.authorService.update(args.id, args.author);
+    return await this.authorService.update(id, author);
   }
 
   @Query()
