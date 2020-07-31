@@ -17,4 +17,8 @@ export class AuthorService {
   async find(): Promise<Author[]> {
     return this.authorModel.find();
   }
+
+  async findOne(id: string): Promise<Author> {
+    return this.authorModel.findById(id);
+  }
 }

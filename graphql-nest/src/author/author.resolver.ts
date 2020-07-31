@@ -20,16 +20,8 @@ export class AuthorResolver {
     return await this.authorService.create(author);
   }
 
-  // @Query()
-  // async author(
-  //   @Parent() parent,
-  //   @Args('id') id,
-  //   @Context() ctx,
-  //   @Info() info,
-  // ): Promise<Author> {
-  //   const _author = this.authors.find(author => author.id === id);
-  //   return _author
-  //     ? Promise.resolve(_author)
-  //     : Promise.reject('Could not find any author');
-  // }
+  @Query()
+  async author(@Args('id') id: string): Promise<Author> {
+    return await this.authorService.findOne(id);
+  }
 }
