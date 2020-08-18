@@ -3,7 +3,7 @@ export class RoleEntity {
   name: string;
   email: string;
 
-  constructor(partial: RoleEntity) {
+  constructor(partial: Partial<RoleEntity>) {
     // Object.assign(this, partial);
   }
 }
