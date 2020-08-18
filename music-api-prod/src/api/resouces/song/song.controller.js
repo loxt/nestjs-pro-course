@@ -21,5 +21,15 @@ export default {
       console.error(err);
       return res.status(500).send(err);
     }
+  },
+
+  async findAll(req, res) {
+    try {
+      const songs = await Song.find();
+      return res.json(songs);
+    } catch (err) {
+      console.error(err);
+      return res.status(500).send(err);
+    }
   }
 }
